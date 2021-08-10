@@ -26,9 +26,11 @@ import TestClassComponent from "./component/TestClassComponent";
 import TestContext from "./component/TestContext";
 import TestEffectRe from "./component/TestEffectRe";
 import TestFontAwesomeIcon from "./component/TestFontAwesomeIcon";
+import TestReRender from "./component/TestReRender";
 import Todo from "./component/Todo/Todo";
 import ThemeContextProvider from "./contexts/ThemeContext";
 import TodoContextProvider from "./contexts/TodoContext";
+import { EffectSet } from './component/EffectSet';
 
 library.add(fab, fas);
 
@@ -63,6 +65,9 @@ function App() {
       <TodoContextProvider>
         <Todo />
       </TodoContextProvider>
+      <h3>Test re-render</h3>
+      <TestReRender />
+      <EffectSet />
     </Router>
   );
 }
